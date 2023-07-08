@@ -2761,6 +2761,21 @@ input[type="radio"]:focus+label:before {
 	width: 100%;
 }
 
+@media screen and (min-width: 750px) and (max-width: 950px) {
+	.image.fit img {
+		width: 100%;
+		height: 220px;
+	}
+}
+
+
+@media screen and (min-width: 900px) {
+	.image.fit img {
+		width: 100%;
+		height: 300px;
+	}
+}
+
 .image.main {
 	display: block;
 	margin: 4rem 0;
@@ -3415,15 +3430,31 @@ table.alt tbody tr td {
 	height: 100%;
 	background-color: #212931;
 	filter: blur(4px);
-	background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/background.jpg");
+	background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0,0,0,0.2), rgba(0, 0, 0, 0.1)), url("../../images/background.jpg");
 	background-size: cover;
-	background-position: center, center, top center;
+	background-position: center, center, bottom center;
 	background-repeat: no-repeat;
 	background-attachment: scroll, scroll, scroll;
 	z-index: -1;
 }
 
-#wrapper>.bg.fixed {
+#wrapper>.bg2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #212931;
+	filter: blur(4px);
+	background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0,0,0,0.4), rgba(0, 0, 0, 0.1)), url("../../images/background.jpg");
+	background-size: cover;
+	background-position: center, center, bottom center;
+	background-repeat: no-repeat;
+	background-attachment: scroll, scroll, scroll;
+	z-index: -1;
+}
+
+#wrapper>.bg.fixed, #wrapper>.bg2.fixed {
 	position: fixed;
 	width: 100vw;
 	height: 100vh;
@@ -3457,6 +3488,10 @@ body.is-preload #wrapper.fade-in:before {
 @media screen and (orientation: portrait) {
 
 	#wrapper>.bg {
+		background-size: cover;
+	}
+
+	#wrapper>.bg2 {
 		background-size: cover;
 	}
 
