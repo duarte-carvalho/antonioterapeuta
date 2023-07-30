@@ -34,7 +34,12 @@
 			<h4 style="font-weight: 400; letter-spacing: 0.7rem">Terapeuta</h4>
 			<p><br /></p>
 			<ul class="actions-custom">
-				<li><a href="#nav" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+
+				<li><a href="#nav" id="innl" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+				<script>
+					if (window.innerWidth < 981)
+						document.getElementById('innl').setAttribute('href', '#main');
+				</script>
 			</ul>
 		</div>
 
