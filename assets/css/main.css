@@ -3621,8 +3621,8 @@ section.title p {
 #intro input[type="button"]:hover,
 #intro button:hover,
 #intro .button:hover {
-	box-shadow: inset 0 0 0 2px #FFCC6D;
-	color: #FFCC6D !important;
+	box-shadow: inset 0 0 0 4px white;
+	color: white !important;
 }
 
 #intro input[type="submit"].primary,
@@ -3899,7 +3899,19 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 }
 
 #nav ul.icons li a.icon:hover:before {
-	color: #18bfef;
+	color: white;
+}
+
+#nav ul.icons li a {
+	opacity: 0.85;
+}
+
+#nav ul.icons li a:hover {
+	opacity: 1;
+}
+
+#nav ul.icons li a:hover {
+	opacity: 1;
 }
 
 #nav ul.icons.alt li .icon:before {
@@ -3923,7 +3935,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 
 #nav a:hover {
 	border-bottom-color: transparent;
-	color: #18bfef !important;
+	color: white !important;
 }
 
 #nav strong,
