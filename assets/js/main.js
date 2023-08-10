@@ -145,7 +145,8 @@
 			$navPanelToggle.removeClass('alt');
 		},
 		leave: function () {
-			$navPanelToggle.addClass('alt');
+			if (window.scrollY > 50)
+				$navPanelToggle.addClass('alt');
 		}
 	});
 
